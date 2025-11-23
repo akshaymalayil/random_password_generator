@@ -11,11 +11,16 @@ const characters = ['A', 'B', 'C', 'D', 'E', 'F', 'G',
 let pass1 = document.getElementById("pass-1")
 let pass2 = document.getElementById("pass-2")
 
+let length = document.getElementById("size")
+
 function generate()
 {
     pass1.innerText =""
     pass2.innerText =""
-    for(let i = 0; i<10; i++)
+
+    let l = length.value
+    
+    for(let i = 0; i<l; i++)
     {
     
         let random1 = Math.floor(Math.random()*characters.length)
